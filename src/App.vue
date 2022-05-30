@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <span>电商管理系统</span>
+    <span>我喜欢写代码</span>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
