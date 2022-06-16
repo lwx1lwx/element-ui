@@ -51,6 +51,7 @@ export default {
         },
         login() {
             // 将await紧挨着的函数加一个async
+            // 表单验证
             this.$refs.loginFormRef.validate(async (valid) => {
                 console.log(valid)
                 if(!valid) return;
