@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father {
+ height: 400px;
+ background-color: pink;
+ position: relative;
+ padding: 0 200px;
+ }
+ .left,.right {
+ width: 200px;
+ height: 300px;
+ background-color: yellow;
+ position: absolute;
+ top: 0;
+ }
+ .left {
+ left: 0;
+ }
+ .right {
+ right: 0;
+ }
+ .center {
+ background-color: blue;
+ height: 350px;
+ }
+
+  </style>
+</head>
+<body>
+  <!-- <div class="father">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+   </div> -->
+   <!-- <input type="image"> -->
+   <script>
+      function test() {
+        let arr = [[222, 333, 444], [55, 66, 77]]
+        arr += ''
+        arr = arr.split(',')
+        console.log(arr)
+      }
+      function test2() {
+        // let arr = {dad: '103',daa: '123'}
+        // Array.prototype.id = 123
+        // arr.name = 'Jessica'
+        // console.log(arr)
+        // for (let i in arr) {
+        //   console.log(i,arr[i])
+        //   if (i==2) {
+
+        //   }
+        // }
+        // let arr = [1, 2, 8, 4, 5]
+        // Array.prototype.id = 321
+        // arr.name = 'Mars'
+        // for (let value of arr) {
+        //   console.log(value);//只能拿到[1,2,3,4,5]
+        // }
+        let obj = {
+          name: 'han',
+          sex: 'female'
+        }
+        console.log(Object.keys(obj));//返回索引值数组 => ['name','female']
+        obj.dance = function () {
+          console.log('dance');
+        }
+        Object.prototype.say = function () {
+          console.log('say');
+        }
+        for (let value of Object.keys(obj)) {
+          console.log(value);//name;sex;dance
+        }
+        console.log(obj)
+      }
+      test()
+      test2()
+   </script>
+</body>
+</html>

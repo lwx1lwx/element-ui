@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*::before,*::after{
+	box-sizing: border-box;
+}
+.w {
+    width: 1280px;
+    margin: 0 auto;
+}
+.spacer {
+	width: 1px;
+	height: 12px !important;
+	background-color: #666;
+	margin: 0 12px;
+}
+.f1 {
+	/* float: left; */
+}
+.f2 {
+	float: right;
+}
+li {
+	list-style: none;
+}
+.homePage {
+	max-width: 1280px;
+}

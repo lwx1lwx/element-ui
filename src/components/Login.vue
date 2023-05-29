@@ -67,9 +67,10 @@ export default {
                     // setInterval(()=> {
                         this.$router.push('/home')
                     // },1000)
-                } else [
+                } else {
+                    console.log('服务器未响应')
                     this.$message.error('用户名或密码错误')
-                ]
+                }
 
             })
         }
